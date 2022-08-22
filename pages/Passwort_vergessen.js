@@ -18,8 +18,6 @@ export default function Passwort_vergessen() {
         </p>
         <Button href="https://priwatt.de/service/anmeldeservice">
           Hier klicken und Passwort ändern
-          Hier klicken und Passwort ändern
-          Hier klicken und Passwort ändern
         </Button>
         <p>
           Vielen Dank für Deine Geduld und toll, dass Du gemeinsam mit uns die
