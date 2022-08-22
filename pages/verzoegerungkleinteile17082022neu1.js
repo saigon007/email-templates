@@ -20,7 +20,9 @@ export default function Unterseite() {
           In diesem Atemzuge möchten wir uns für Deine Geduld bedanken. Wir
           hoffen, dass Deine Freude nun umso größer ist!
         </p>
-        <Button />
+        <Button href="https://priwatt.de/service/anmeldeservice">
+          Hier klicken und kostenlos anmelden!
+        </Button>
         <p>
           Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
           gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,

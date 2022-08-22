@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
-import Password from "../components/Password";
+import Button from "../components/Button";
 
 export default function Passwort_vergessen() {
   return (
@@ -16,7 +16,11 @@ export default function Passwort_vergessen() {
           einfach auf den folgenden Button, um Dir schnell und sicher ein neues
           Passwort zu erstellen.
         </p>
-        <Password />
+        <Button href="https://priwatt.de/service/anmeldeservice">
+          Hier klicken und Passwort ändern
+          Hier klicken und Passwort ändern
+          Hier klicken und Passwort ändern
+        </Button>
         <p>
           Vielen Dank für Deine Geduld und toll, dass Du gemeinsam mit uns die
           Energiewende vorantreibst!
