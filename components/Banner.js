@@ -1,9 +1,9 @@
-export default function Banner() {
+export default function Banner({ src }) {
   return (
     <>
       <div>
         <img
-          src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png"
+          src={src}
           alt="Priwatt Banner"
           width="100%"
           height="auto"
@@ -11,7 +11,6 @@ export default function Banner() {
       </div>
       <style jsx>{`
         .div {
-
         }
       `}</style>
     </>

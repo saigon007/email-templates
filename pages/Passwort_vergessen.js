@@ -9,7 +9,7 @@ export default function Passwort_vergessen() {
   return (
     <Layout>
       <Container>
-        <Banner />
+        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png" />
         <p>Hallo &#123;First + surename&#125;,</p>
         <p>
           Du hast Dein Passwort vergessen? Das passiert den Besten! Klicke

@@ -9,7 +9,7 @@ export default function Unterseite() {
   return (
     <Layout>
       <Container>
-        <Banner />
+        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png" />
         <p>Liebe Kundin, lieber Kunde,</p>
         <p>
           es gibt gute Neuigkeiten: wir möchten Dich darüber informieren, dass
