@@ -1,0 +1,40 @@
+import Layout from "../components/Layout";
+import Container from "../components/Container";
+import Banner from "../components/Banner";
+import BottomContainer from "../components/BottomContainer";
+import Footer from "../components/Footer";
+import Password from "../components/Password";
+
+export default function Passwort_vergessen() {
+  return (
+    <Layout>
+      <Container>
+        <Banner />
+        <p>Hallo &#123;First + surename&#125;,</p>
+        <p>
+          Du hast Dein Passwort vergessen? Das passiert den Besten! Klicke
+          einfach auf den folgenden Button, um Dir schnell und sicher ein neues
+          Passwort zu erstellen.
+        </p>
+        <Password />
+        <p>
+          Vielen Dank für Deine Geduld und toll, dass Du gemeinsam mit uns die
+          Energiewende vorantreibst!
+        </p>
+        <BottomContainer />
+        <style jsx>{`
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 30px;
+            margin: 0;
+          }
+          a {
+            color: #3bdfac;
+          }
+        `}</style>
+      </Container>
+      <Footer />
+    </Layout>
+  );
+}
