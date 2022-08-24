@@ -16,6 +16,44 @@ export default function Unterseite() {
           Du die noch ausstehenden Kleinteile bis Ende der kommenden Woche
           erhalten wirst! Somit kannst Du in Kürze in die Energiewende starten.
         </p>
+        <strong>Informationen zu Deinem Solarmodul</strong>
+        <table className="first-table">
+          <tr>
+            <th>Solarmodul Anzahl</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Hersteller</th>
+            <td>Sunman</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Typ</th>
+            <td>Sunman 310 Wp - SMB310-6X10DW</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Einzelleistung in W</th>
+            <td>310</td>
+          </tr>
+        </table>
+        <strong>Informationen zu Deinem Solarmodul</strong>
+        <table>
+          <tr>
+            <th>Solarmodul Anzahl</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Hersteller</th>
+            <td>Sunman</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Typ</th>
+            <td>Sunman 310 Wp - SMB310-6X10DW</td>
+          </tr>
+          <tr>
+            <th>Solarmodul Einzelleistung in W</th>
+            <td>310</td>
+          </tr>
+        </table>
         <p>
           In diesem Atemzuge möchten wir uns für Deine Geduld bedanken. Wir
           hoffen, dass Deine Freude nun umso größer ist!
@@ -46,6 +84,28 @@ export default function Unterseite() {
           }
           a {
             color: #3bdfac;
+          }
+          tr {
+            text-align: left;
+          }
+          tr:nth-child(odd) {
+            background: #f6f8fe;
+          }
+          th, td {
+            padding: 20px;
+            line-height: 24px;
+            font-size: 14px;
+          }
+          .first-table {
+            margin-bottom: 50px;
+          }
+          table {
+            border-spacing: 0;
+            margin-bottom: 30px;
+          }
+          strong {
+            display: block;
+            margin-bottom: 20px;
           }
         `}</style>
       </Container>
