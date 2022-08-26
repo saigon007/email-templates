@@ -38,17 +38,17 @@ export default function Unterseite() {
         </p>
 
         <p>
-          Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
-          gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,
+          <strong>Du hast noch Fragen zu Deiner Stecker-Solaranlage?</strong> Dann schaue auch
+          gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>, 
           <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
             YouTube-Kanal
           </a>
-          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>
-          vorbei.
+           oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>
+           vorbei.
         </p>
         <p>
-          Du hast bereits ein Produkt gekauft oder möchtest nicht mehr
-          benachrichtigt werden? Ganz unten in dieser E-Mail kannst Du Dich für
+          <strong>Du hast bereits ein Produkt gekauft oder möchtest nicht mehr
+          benachrichtigt werden?</strong> Ganz unten in dieser E-Mail kannst Du Dich für
           die Produktbenachrichtigung abmelden.
         </p>
 
