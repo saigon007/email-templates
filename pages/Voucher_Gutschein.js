@@ -11,6 +11,8 @@ export default function Passwort_vergessen() {
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png" />
         <p>Hallo &#123;first + surename&#125;,</p>
+        <p>vielen Dank, dass Du die Energiewende voranbringst!
+       </p>
         <p>
           als kleines Dankeschön für Deinen Einsatz für die Energiewende
           erhältst von uns einen 25 € priwatt Gutschein. Diesen kannst Du selbst

@@ -10,12 +10,25 @@ export default function Unterseite() {
     <Layout>
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png" />
-        <p>Liebe Kundin, lieber Kunde,</p>
+        <p>Hallo &#123;first + surename&#125;,</p>
+        <p>vielen Dank, dass Du die Energiewende voranbringst!</p>
         <p>
-          es gibt gute Neuigkeiten: wir möchten Dich darüber informieren, dass
-          Du die noch ausstehenden Kleinteile bis Ende der kommenden Woche
-          erhalten wirst! Somit kannst Du in Kürze in die Energiewende starten.
+          Damit Du weißt, was Deine Stecker-Solaranlage alles kann, haben wir
+          Dir in der folgenden Tabelle die wichtigsten Informationen zu Deinem
+          Solarmodul und Wechselrichter zusammengetragen.
         </p>
+        <p>
+          <strong>
+            Achtung: Für die spätere Anmeldung Deiner Anlage wirst Du diese
+            Produktinformationen noch benötigen. Speichere Dir diese E-Mail also
+            gut ab.
+          </strong>
+        </p>
+        <p>
+          Mehr Informationen zur Anmeldung erhältst Du in den kommenden Tagen
+          per E-Mail.
+        </p>
+
         <strong>Informationen zu Deinem Solarmodul</strong>
         <table className="first-table">
           <tr>
@@ -55,24 +68,22 @@ export default function Unterseite() {
           </tr>
         </table>
         <p>
-          In diesem Atemzuge möchten wir uns für Deine Geduld bedanken. Wir
-          hoffen, dass Deine Freude nun umso größer ist!
+          <strong>
+            Du möchtest Dich schon jetzt zur Anmeldung Deiner
+            Stecker-Solaranlage informieren?
+          </strong>
+        </p>
+        <p>
+          Dann klicke auf den folgenden Button, um Dich über die Anmeldung und
+          den kostenlosen priwatt Anmeldeservice zu informieren:
         </p>
         <Button href="https://priwatt.de/service/anmeldeservice">
-          Hier klicken und kostenlos anmelden!
+          Hier klicken und mehr erfahren!
         </Button>
+
         <p>
-          Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
-          gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,
-          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
-            YouTube-Kanal
-          </a>
-          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>
-          vorbei.
-        </p>
-        <p>
-          Vielen Dank für Deine Geduld und toll, dass Du gemeinsam mit uns die
-          Energiewende vorantreibst!
+          Wir wünschen Dir viel Spaß bei der Erzeugung Deines eigenen
+          Solarstroms!
         </p>
         <BottomContainer />
         <style jsx>{`
@@ -91,7 +102,8 @@ export default function Unterseite() {
           tr:nth-child(odd) {
             background: #f6f8fe;
           }
-          th, td {
+          th,
+          td {
             padding: 20px;
             line-height: 24px;
             font-size: 14px;
@@ -102,6 +114,7 @@ export default function Unterseite() {
           table {
             border-spacing: 0;
             margin-bottom: 30px;
+            width: 100%;
           }
           strong {
             display: block;

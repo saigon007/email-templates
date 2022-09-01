@@ -10,24 +10,12 @@ export default function Unterseite() {
     <Layout>
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/wunschprodukt.png" />
-        <p>Liebe Kundin, lieber Kunde,</p>
+        <p>Hallo &#123;first + surename&#125;,</p>
         <p>
-           Dein Wunschprodukt{" "}
-          <strong>priFlat Duo</strong> ist ab sofort für eine limitierte
-          Anzahl verfügbar. Der avisierte Lieferzeitraum liegt zwischen dem{" "}
-          <strong>16. bis 30. September</strong>.wir haben gute Nachrichten: zum Wochenende
+        vielen Dank für Deine Kontaktanfrage. Unsere priwatt ExpertInnen werden sich innerhalb der nächsten 14 Tage bei Dir zurückmelden. 
         </p>
         <p>
-          Um zum Produkt zu gelangen, klicke bitte auf den nachfolgenden Link:
-        </p>
-        <Button href="https://priwatt.de/stecker-solaranlagen/flachdach/priflat-duo/SW10073.83">
-          Hier geht`s zum priFlat Duo!
-        </Button>
-        <p>
-          Sollte dieser Button nicht angezeigt werden, klicke bitte{" "}
-          <a href="https://priwatt.de/stecker-solaranlagen/flachdach/priflat-duo/SW10073.83">
-            hier
-          </a>.
+        Bitte beachte: Aufgrund der hohen Nachfrage können wir NeukundInnen-Anfragen zum aktuellen Zeitpunkt nicht annehmen. Wir bitten Dich, dies zu entschuldigen.
         </p>
         <p>
           <strong>Achtung:</strong> Erfahrungsgemäß ist das Produkt binnen 9 bis
@@ -46,6 +34,9 @@ export default function Unterseite() {
           oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>
           vorbei.
         </p>
+        <Button href="https://priwatt.de/stecker-solaranlagen/balkon/pribalcony-450/SW10047.106">
+          Hier geht`s zum priBalcony 45°!
+        </Button>
         <p>
           Du hast bereits ein Produkt gekauft oder möchtest nicht mehr
           benachrichtigt werden? Ganz unten in dieser E-Mail kannst Du Dich für

@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
+import ContainerOrderNr from "../components/ContainerOrderNr";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
-import ContainerOrderNr from "../components/ContainerOrderNr";
 
 export default function Unterseite() {
   return (
@@ -10,14 +10,10 @@ export default function Unterseite() {
       <ContainerOrderNr>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/Mahnung.png" />
         <p>&#123;ANSCHREIBEN&#125;,</p>
-        <p>
-        vielen Dank für Deinen Einkauf bei priwatt und Deinen Beitrag zur Energiewende!
-        </p>
-        <p>Gern machen wir Dich darauf aufmerksam, dass die Zahlung zu Deiner 
-          Bestellung &#123;BELEGNR&#125; vom &#123;DATUM&#125; noch aussteht. 
-          Um eine Stornierung Deines Auftrags zu vermeiden, überweise bitte den offenen 
-          Betrag von &#123;GESAMT&#125; auf das folgende Konto, damit unser Team Deine Bestellung 
-          weiter bearbeiten kann:
+        
+        <p>die Zahlung zu Deiner priwatt Bestellung &#123;BELEGNR&#125; vom &#123;DATUM&#125; steht noch aus. 
+        Bitte überweise den Betrag von &#123;GESAMT&#125; Euro innerhalb der nächsten 7 Tage auf das folgende Konto, damit unser Team Deine Bestellung bearbeiten kann. 
+        Anderenfalls wird Dein Auftrag in Kürze storniert.
         </p>
           <p><strong>Name:</strong> Priwatt GmbH
           <br/><strong>IBAN:</strong> DE83 4306 0967 1131 7476 00
@@ -26,7 +22,7 @@ export default function Unterseite() {
           <br/><strong>Verwendungszweck:</strong> &#123;BELEGNR&#125;
           </p>
           <p>
-          Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
+         Hast Du noch Fragen? Dann schaue auch
           gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>, 
           <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
             YouTube-Kanal
@@ -35,6 +31,7 @@ export default function Unterseite() {
            vorbei.
           </p>
           <p>Vielen Dank für Deinen Beitrag zur Energiewende!</p>
+      
         <BottomContainer />
         <style jsx>{`
           p {
