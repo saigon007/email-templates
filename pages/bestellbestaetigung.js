@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
 import ContainerOrderNr from "../components/ContainerOrderNr";
 
 export default function Unterseite() {
@@ -60,32 +59,35 @@ export default function Unterseite() {
           &#123;&#123; order.orderNumber &#125;&#125;
         </p>
         <h2>Bestellübersicht</h2>
+        &#123;% for lineItem in order.lineItems %&#125; &#123;% if
+        lineItem.payload.features is defined and
+        lineItem.payload.features|length &gt;= 1 %&#125; &#123;% set
+        referencePriceFeatures = lineItem.payload.features|filter(feature =&gt;
+        feature.type == 'referencePrice') %&#125; &#123;% if
+        referencePriceFeatures|length &gt;= 1 %&#125; &#123;% set
+        referencePriceFeature = referencePriceFeatures|first %&#125;,
+        &#123;&#123; referencePriceFeature.value.purchaseUnit &#125;&#125;
+        &#123;&#123; referencePriceFeature.value.unitName &#125;&#125;
+        (&#123;&#123;
+        referencePriceFeature.value.price|currency(currencyIsoCode)
+        &#125;&#125;* / &#123;&#123; referencePriceFeature.value.referenceUnit
+        &#125;&#125; &#123;&#123; referencePriceFeature.value.unitName
+        &#125;&#125;) &#123;% endif %&#125; &#123;% endif %&#125; &#123;% if
+        lineItem.cover.url is defined %&#125; &#123;% endif %&#125;
+        <div className="margin-left">
+          <p className="text-darkblue">
+            &#123;&#123; lineItem.label|u.wordwrap(80) &#125;&#125; x
+            &#123;&#123; lineItem.quantity &#125;&#125;{" "}
+          </p>
+        </div>
         <p>
-          &#123;% for lineItem in order.lineItems %&#125; &#123;% if
-          lineItem.payload.features is defined and
-          lineItem.payload.features|length &gt;= 1 %&#125; &#123;% set
-          referencePriceFeatures = lineItem.payload.features|filter(feature
-          =&gt; feature.type == 'referencePrice') %&#125; &#123;% if
-          referencePriceFeatures|length &gt;= 1 %&#125; &#123;% set
-          referencePriceFeature = referencePriceFeatures|first %&#125;,
-          &#123;&#123; referencePriceFeature.value.purchaseUnit &#125;&#125;
-          &#123;&#123; referencePriceFeature.value.unitName &#125;&#125;
-          (&#123;&#123;
-          referencePriceFeature.value.price|currency(currencyIsoCode)
-          &#125;&#125;* / &#123;&#123; referencePriceFeature.value.referenceUnit
-          &#125;&#125; &#123;&#123; referencePriceFeature.value.unitName
-          &#125;&#125;) &#123;% endif %&#125; &#123;% endif %&#125; &#123;% if
-          lineItem.cover.url is defined %&#125; &#123;% endif %&#125;
-        </p>
-        <p>
-          &#123;&#123; lineItem.label|u.wordwrap(80) &#125;&#125; x &#123;&#123;
-          lineItem.quantity &#125;&#125; &#123;% if lineItem.payload.options is
-          defined and lineItem.payload.options|length &gt;= 1 %&#125; &#123;%
-          for option in lineItem.payload.options %&#125;&#123;&#123;
-          option.group &#125;&#125;: &#123;&#123; option.option &#125;&#125;
-          &#123;% if lineItem.payload.options|last != option %&#125;&#123;&#123;
-          " | " &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125;
-          &#123;% endif %&#125; &#123;&#123;
+          &#123;% if lineItem.payload.options is defined and
+          lineItem.payload.options|length &gt;= 1 %&#125; &#123;% for option in
+          lineItem.payload.options %&#125;&#123;&#123; option.group
+          &#125;&#125;: &#123;&#123; option.option &#125;&#125; &#123;% if
+          lineItem.payload.options|last != option %&#125;&#123;&#123; " | "
+          &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125; &#123;%
+          endif %&#125; &#123;&#123;
           lineItem.unitPrice|currency(currencyIsoCode) &#125;&#125; &#123;%
           endfor %&#125;
         </p>
@@ -133,7 +135,22 @@ export default function Unterseite() {
           &#125;&#125; &#123;&#123; billingAddress.city &#125;&#125;
           &#123;&#123; billingAddress.country.translated.name &#125;&#125;
         </p>
-        <p>Toll, dass Du gemeinsam mit uns die Energiewende vorantreibst!</p>
+        <p>
+          Für den schnell und einfachen Aufbau Deiner Stecker-Solaranlage
+          findest Du hier die{" "}
+          <a href="https://priwatt.de/wordpress/wp-content/uploads/2022/08/priwatt-Montageanlage-08-22-1.pdf">
+            Montageanleitung
+          </a>
+          ,{" "}
+          <a href="https://priwatt.de/service/einfach-installieren/">
+            Step-byStep-Aufbauanleitung
+          </a>{" "}
+          und ermittelst mit dem{" "}
+          <a href="https://priwatt.de/service/ertragsrechner/">
+            Ertragsrechner
+          </a>{" "}
+          Deine Amortisation.
+        </p>
         <BottomContainer />
         <style jsx>{`
           p {
@@ -154,6 +171,19 @@ export default function Unterseite() {
             font-weight: 600;
             color: #0c215a;
             line-height: 27px;
+          }
+          .text-darkblue {
+            font-family: Inter, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: left;
+            color: #0c215a;
+            padding-left: 15px;
+          }
+
+          .margin-left {
+            padding-left: 60px;
           }
         `}</style>
       </ContainerOrderNr>
