@@ -59,13 +59,13 @@ export default function Unterseite() {
           </strong>{" "}
           &#123;&#123; order.orderNumber &#125;&#125;
         </p>
+        <h2>Bestellübersicht</h2>
         <p>
-          <strong>Bestellübersicht</strong>
           &#123;% for lineItem in order.lineItems %&#125; &#123;% if
           lineItem.payload.features is defined and
           lineItem.payload.features|length &gt;= 1 %&#125; &#123;% set
-          referencePriceFeatures = lineItem.payload.features|filter(feature =&gt;
-          feature.type == 'referencePrice') %&#125; &#123;% if
+          referencePriceFeatures = lineItem.payload.features|filter(feature
+          =&gt; feature.type == 'referencePrice') %&#125; &#123;% if
           referencePriceFeatures|length &gt;= 1 %&#125; &#123;% set
           referencePriceFeature = referencePriceFeatures|first %&#125;,
           &#123;&#123; referencePriceFeature.value.purchaseUnit &#125;&#125;
@@ -80,12 +80,12 @@ export default function Unterseite() {
         <p>
           &#123;&#123; lineItem.label|u.wordwrap(80) &#125;&#125; x &#123;&#123;
           lineItem.quantity &#125;&#125; &#123;% if lineItem.payload.options is
-          defined and lineItem.payload.options|length &gt;= 1 %&#125; &#123;% for
-          option in lineItem.payload.options %&#125;&#123;&#123; option.group
-          &#125;&#125;: &#123;&#123; option.option &#125;&#125; &#123;% if
-          lineItem.payload.options|last != option %&#125;&#123;&#123; " | "
-          &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125; &#123;%
-          endif %&#125; &#123;&#123;
+          defined and lineItem.payload.options|length &gt;= 1 %&#125; &#123;%
+          for option in lineItem.payload.options %&#125;&#123;&#123;
+          option.group &#125;&#125;: &#123;&#123; option.option &#125;&#125;
+          &#123;% if lineItem.payload.options|last != option %&#125;&#123;&#123;
+          " | " &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125;
+          &#123;% endif %&#125; &#123;&#123;
           lineItem.unitPrice|currency(currencyIsoCode) &#125;&#125; &#123;%
           endfor %&#125;
         </p>
@@ -97,97 +97,42 @@ export default function Unterseite() {
           %&#125; &#123;% set total = order.price.rawTotal %&#125; &#123;% set
           decimals = order.itemRounding.decimals %&#125; &#123;% endif %&#125;
         </p>
-<p>Zwischensumme
-&#123;&#123;
-order.amountNet|currency(currencyIsoCode)
-&#125;&#125;
-
-Versand
-
- &#123;% if order.deliveries is defined and
-                        order.deliveries|length &gt;= 1 %&#125;
-
-
-&#123;% for shippingCost in order.deliveries
-%&#125;
-&#123;&#123;
-shippingCost.shippingCosts.totalPrice|currency(currencyIsoCode)
-&#125;&#125;
-&#123;% endfor %&#125;
-
-
-     &#123;% endif %&#125;
-
-
-
-Steuern
-
-    &#123;% if order.price.calculatedTaxes is defined and
-                        order.price.calculatedTaxes|length &gt;= 1 %&#125;
-
-&#123;% for calculatedTax in
-order.price.calculatedTaxes %&#125;
-&#123;&#123;
-calculatedTax.tax|currency(currencyIsoCode)
-&#125;&#125;
-&#123;% endfor %&#125;
-
-&#123;% endif %&#125;
-
-
-Gesamt
-
-&#123;&#123;
-total|currency(currencyIsoCode,decimals=decimals)
-&#125;&#125;
-
-
-
-</p>
-
-<p>
-Informationen zu Deiner Bestellung
-
-
-</p>
-
-<p>
-Lieferadresse
-
-&#123;% set delivery = order.deliveries.first %&#125;
-                  &#123;% set shippingAddress = delivery.shippingOrderAddress %&#125;
-
-&#123;&#123; shippingAddress.company &#125;&#125; 
-&#123;&#123; shippingAddress.firstName &#125;&#125; 
-&#123;&#123; shippingAddress.lastName &#125;&#125; 
-&#123;&#123; shippingAddress.street &#125;&#125; 
-&#123;&#123; shippingAddress.zipcode &#125;&#125; 
-&#123;&#123; shippingAddress.city &#125;&#125;  
-&#123;&#123; shippingAddress.country.translated.name &#125;&#125;
-
-</p>
-
-<p>
-
-Rechnungsadresse
-
-     &#123;% set billingAddress = order.addresses.get(order.billingAddressId) %&#125;
-
-&#123;&#123; billingAddress.company &#125;&#125; 
-&#123;&#123; billingAddress.firstName &#125;&#125; 
-&#123;&#123; billingAddress.lastName &#125;&#125; 
-&#123;&#123; billingAddress.street &#125;&#125; 
-&#123;&#123; billingAddress.zipcode &#125;&#125; 
-&#123;&#123; billingAddress.city &#125;&#125; 
-&#123;&#123; billingAddress.country.translated.name &#125;&#125;
-
-
-</p>
-
-
-
-
-
+        <p>
+          Zwischensumme &#123;&#123; order.amountNet|currency(currencyIsoCode)
+          &#125;&#125; Versand &#123;% if order.deliveries is defined and
+          order.deliveries|length &gt;= 1 %&#125; &#123;% for shippingCost in
+          order.deliveries %&#125; &#123;&#123;
+          shippingCost.shippingCosts.totalPrice|currency(currencyIsoCode)
+          &#125;&#125; &#123;% endfor %&#125; &#123;% endif %&#125; Steuern
+          &#123;% if order.price.calculatedTaxes is defined and
+          order.price.calculatedTaxes|length &gt;= 1 %&#125; &#123;% for
+          calculatedTax in order.price.calculatedTaxes %&#125; &#123;&#123;
+          calculatedTax.tax|currency(currencyIsoCode) &#125;&#125; &#123;%
+          endfor %&#125; &#123;% endif %&#125; Gesamt &#123;&#123;
+          total|currency(currencyIsoCode,decimals=decimals) &#125;&#125;
+        </p>
+        <p>Informationen zu Deiner Bestellung</p>
+        <p>
+          Lieferadresse &#123;% set delivery = order.deliveries.first %&#125;
+          &#123;% set shippingAddress = delivery.shippingOrderAddress %&#125;
+          &#123;&#123; shippingAddress.company &#125;&#125; &#123;&#123;
+          shippingAddress.firstName &#125;&#125; &#123;&#123;
+          shippingAddress.lastName &#125;&#125; &#123;&#123;
+          shippingAddress.street &#125;&#125; &#123;&#123;
+          shippingAddress.zipcode &#125;&#125; &#123;&#123; shippingAddress.city
+          &#125;&#125; &#123;&#123; shippingAddress.country.translated.name
+          &#125;&#125;
+        </p>
+        <p>
+          Rechnungsadresse &#123;% set billingAddress =
+          order.addresses.get(order.billingAddressId) %&#125; &#123;&#123;
+          billingAddress.company &#125;&#125; &#123;&#123;
+          billingAddress.firstName &#125;&#125; &#123;&#123;
+          billingAddress.lastName &#125;&#125; &#123;&#123;
+          billingAddress.street &#125;&#125; &#123;&#123; billingAddress.zipcode
+          &#125;&#125; &#123;&#123; billingAddress.city &#125;&#125;
+          &#123;&#123; billingAddress.country.translated.name &#125;&#125;
+        </p>
         <p>Toll, dass Du gemeinsam mit uns die Energiewende vorantreibst!</p>
         <BottomContainer />
         <style jsx>{`
@@ -202,6 +147,13 @@ Rechnungsadresse
           }
           .text-red {
             color: red;
+          }
+          h2 {
+            font-size: 18px;
+            font-family: Inter, Arial, sans-serif;
+            font-weight: 600;
+            color: #0c215a;
+            line-height: 27px;
           }
         `}</style>
       </ContainerOrderNr>
