@@ -1,8 +1,8 @@
 import Logo from "../components/Logo";
 
-export default function OrderNr() {
+export default function OrderNr({children}) {
   return (
-    <div>Bestellnummer # &#123;BELEGNR&#125;
+    <div>Bestellnummer {children} 
       <style jsx>{`
        
       `}</style>

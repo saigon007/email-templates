@@ -1,13 +1,15 @@
 import Logo from "../components/Logo";
 import OrderNr from "./OrderNr";
 
-export default function ContainerOrderNr({ children }) {
+export default function ContainerOrderNr({
+  children,
+  varordernr = "# &#123;BELEGNR&#125;",
+}) {
   return (
     <div className="container">
       <div className="header">
         <Logo />
-        <OrderNr />
-        
+        <OrderNr>{varordernr}</OrderNr>
       </div>
       {children}
       <style jsx>{`
@@ -19,10 +21,10 @@ export default function ContainerOrderNr({ children }) {
           max-width: 600px;
           margin-bottom: 30px;
         }
-        .header{
-          display:flex;
-          justify-content:space-between;
-          align-items:center;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
       `}</style>
     </div>
