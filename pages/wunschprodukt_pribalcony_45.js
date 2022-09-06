@@ -10,7 +10,9 @@ export default function Unterseite() {
     <Layout>
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/wunschprodukt.png" />
-        <p>Liebe Kundin, lieber Kunde,</p>
+        
+        
+    <p>Liebe Kundin, lieber Kunde,</p>
         <p>
           wir haben gute Nachrichten: zum Wochenende Dein Wunschprodukt{" "}
           <strong>priBalcony 45°</strong> ist ab sofort für eine limitierte
