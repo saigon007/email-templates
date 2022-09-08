@@ -18,8 +18,8 @@ export default function Unterseite() {
         <p>
           gerne bestätigen wir Dir, dass Deine Bestellung &#123;&#123;
           order.orderNumber &#125;&#125; vom &#123;&#123;
-          order.orderDate|date(&#34;d/m/Y&#34;) &#125;&#125; bei uns eingegangen ist.
-          Voraussichtlich wird Deine Bestellung am &#123;% set dateTo =
+          order.orderDate|date(&#34;d/m/Y&#34;) &#125;&#125; bei uns eingegangen
+          ist. Voraussichtlich wird Deine Bestellung am &#123;% set dateTo =
           order.deliveries.at(0).shippingDateLatest %&#125; &#123;% for lineItem
           in order.lineItems %&#125; &#123;% if
           lineItem.payload.customFields.custom_product_deliveries_field_date_to
@@ -28,7 +28,8 @@ export default function Unterseite() {
           &gt; date(dateTo) %&#125; &#123;% set dateTo =
           lineItem.payload.customFields.custom_product_deliveries_field_date_to
           %&#125; &#123;% endif %&#125; &#123;% endif %&#125; &#123;% endfor
-          %&#125; &#123;&#123; dateTo|date(&#34;d/m/Y&#34;) &#125;&#125; geliefert.
+          %&#125; &#123;&#123; dateTo|date(&#34;d/m/Y&#34;) &#125;&#125;
+          geliefert.
         </p>
         <p>
           Aufgrund der derzeit hohen Nachfrage kann es vereinzelt zu
@@ -74,23 +75,25 @@ export default function Unterseite() {
         &#125;&#125; &#123;&#123; referencePriceFeature.value.unitName
         &#125;&#125;) &#123;% endif %&#125; &#123;% endif %&#125; &#123;% if
         lineItem.cover.url is defined %&#125; &#123;% endif %&#125;
-        <div className="margin-left">
-          <p className="text-darkblue">
-            &#123;&#123; lineItem.label|u.wordwrap(80) &#125;&#125; x
-            &#123;&#123; lineItem.quantity &#125;&#125;{" "}
-          </p>
+        <div className="flex">
+          <div className="margin-left">
+            <p className="text-darkblue">
+              &#123;&#123; lineItem.label|u.wordwrap(80) &#125;&#125; x
+              &#123;&#123; lineItem.quantity &#125;&#125;{" "}
+            </p>
+            &#123;% if lineItem.payload.options is defined and
+            lineItem.payload.options|length &gt;= 1 %&#125; &#123;% for option
+            in lineItem.payload.options %&#125;&#123;&#123; option.group
+            &#125;&#125;: &#123;&#123; option.option &#125;&#125; &#123;% if
+            lineItem.payload.options|last != option %&#125;&#123;&#123; &#34; |
+            &#34; &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125;
+            &#123;% endif %&#125;
+          </div>
+          <div>
+            &#123;&#123; lineItem.unitPrice|currency(currencyIsoCode)
+            &#125;&#125; &#123;% endfor %&#125;
+          </div>
         </div>
-        <p>
-          &#123;% if lineItem.payload.options is defined and
-          lineItem.payload.options|length &gt;= 1 %&#125; &#123;% for option in
-          lineItem.payload.options %&#125;&#123;&#123; option.group
-          &#125;&#125;: &#123;&#123; option.option &#125;&#125; &#123;% if
-          lineItem.payload.options|last != option %&#125;&#123;&#123; &#34; | &#34;
-          &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125; &#123;%
-          endif %&#125; &#123;&#123;
-          lineItem.unitPrice|currency(currencyIsoCode) &#125;&#125; &#123;%
-          endfor %&#125;
-        </p>
         <p>
           &#123;% set displayRounded = order.totalRounding.interval != 0.01 or
           order.totalRounding.decimals != order.itemRounding.decimals %&#125;
@@ -181,9 +184,14 @@ export default function Unterseite() {
             color: #0c215a;
             padding-left: 15px;
           }
-
           .margin-left {
+            padding: 20px;
             padding-left: 60px;
+          }
+          .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         `}</style>
       </ContainerOrderNr>
