@@ -10,7 +10,7 @@ export default function Unterseite() {
       <ContainerOrderNr varordernr="{{ order.orderNumber }}">
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/wunschprodukt.png" />
         &#123;% set currencyIsoCode = order.currency ? order.currency.isoCode :
-        'EUR'%&#125;
+        &#39;EUR&#39;%&#125;
         <p>
           Hallo &#123;&#123; order.orderCustomer.firstName &#125;&#125;
           &#123;&#123; order.orderCustomer.lastName &#125;&#125;,
@@ -18,7 +18,7 @@ export default function Unterseite() {
         <p>
           gerne bestätigen wir Dir, dass Deine Bestellung &#123;&#123;
           order.orderNumber &#125;&#125; vom &#123;&#123;
-          order.orderDate|date("d/m/Y") &#125;&#125; bei uns eingegangen ist.
+          order.orderDate|date(&#34;d/m/Y&#34;) &#125;&#125; bei uns eingegangen ist.
           Voraussichtlich wird Deine Bestellung am &#123;% set dateTo =
           order.deliveries.at(0).shippingDateLatest %&#125; &#123;% for lineItem
           in order.lineItems %&#125; &#123;% if
@@ -28,7 +28,7 @@ export default function Unterseite() {
           &gt; date(dateTo) %&#125; &#123;% set dateTo =
           lineItem.payload.customFields.custom_product_deliveries_field_date_to
           %&#125; &#123;% endif %&#125; &#123;% endif %&#125; &#123;% endfor
-          %&#125; &#123;&#123; dateTo|date("d/m/Y") &#125;&#125; geliefert.
+          %&#125; &#123;&#123; dateTo|date(&#34;d/m/Y&#34;) &#125;&#125; geliefert.
         </p>
         <p>
           Aufgrund der derzeit hohen Nachfrage kann es vereinzelt zu
@@ -63,7 +63,7 @@ export default function Unterseite() {
         lineItem.payload.features is defined and
         lineItem.payload.features|length &gt;= 1 %&#125; &#123;% set
         referencePriceFeatures = lineItem.payload.features|filter(feature =&gt;
-        feature.type == 'referencePrice') %&#125; &#123;% if
+        feature.type == &#39;referencePrice&#39;) %&#125; &#123;% if
         referencePriceFeatures|length &gt;= 1 %&#125; &#123;% set
         referencePriceFeature = referencePriceFeatures|first %&#125;,
         &#123;&#123; referencePriceFeature.value.purchaseUnit &#125;&#125;
@@ -85,7 +85,7 @@ export default function Unterseite() {
           lineItem.payload.options|length &gt;= 1 %&#125; &#123;% for option in
           lineItem.payload.options %&#125;&#123;&#123; option.group
           &#125;&#125;: &#123;&#123; option.option &#125;&#125; &#123;% if
-          lineItem.payload.options|last != option %&#125;&#123;&#123; " | "
+          lineItem.payload.options|last != option %&#125;&#123;&#123; &#34; | &#34;
           &#125;&#125; &#123;% endif %&#125; &#123;% endfor %&#125; &#123;%
           endif %&#125; &#123;&#123;
           lineItem.unitPrice|currency(currencyIsoCode) &#125;&#125; &#123;%
