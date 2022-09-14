@@ -12,25 +12,19 @@ export default function Unterseite() {
         <p>
           <strong>
             Dein Paket von priwatt zur Bestellung #123;#123; orderNumber
-            #125;#125; wurde versandt
+            #125;#125; konnte nicht zugestellt werden
           </strong>
         </p>
         <p>Hallo #123;#123; recipient.name #125;#125;</p>
-        <p>Deine Bestellung von priwatt ist auf dem Weg zu Dir!</p>
         <p>
-          Deine Sendung mit der Auftragsnummer #123;#123; orderNumber #125;#125;
-          wurde soeben mit #123;#123; carrier #125;#125; an Deine angegebene
-          Adresse versendet.
+          leider konnte Dein Paket von priwatt mit der Sendungsnummer #123;#123;
+          trackingCode #125;#125; heute nicht zugestellt werden.
         </p>
-         <p>
-         #123;#123; recipient #125;#125;
+        <p>
+          Am kommenden Werktag wird #123;#123; carrier #125;#125; einen zweiten
+          Zustellversuch starten.
+        </p>
 
-         </p>
-        <p>
-          Mit Deiner Sendungsnummer kannst Du Dein Paket ganz einfach verfolgen:
-          #123;#123; trackingCode #125;#125 #123;%- if carrierPortalLink is not
-          empty -%#125;
-        </p>
         <p>
           <strong>
             Du möchtest einen Wunschtermin, eine Adressänderung, eine
@@ -38,6 +32,11 @@ export default function Unterseite() {
           </strong>
           Nutze dafür ganz einfach diesen Paketlink. #123;%- endif -%#125;
         </p>
+        <p>
+          Weitere Details und Informationen zum Sendungsverlauf findest Du in
+          Deiner Sendungsverfolgung.
+        </p>
+
         <BottomContainer />
         <style jsx>{`
           p {

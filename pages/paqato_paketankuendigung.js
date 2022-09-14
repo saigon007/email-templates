@@ -12,19 +12,13 @@ export default function Unterseite() {
         <p>
           <strong>
             Dein Paket von priwatt zur Bestellung #123;#123; orderNumber
-            #125;#125; wurde versandt
+            #125;#125; wird bald zugestellt
           </strong>
         </p>
         
         <p>Hallo #123;#123; recipient.name #125;#125;</p>
-        <p>Deine Bestellung von priwatt ist auf dem Weg zu Dir!
+        <p>Deine Bestellung von priwatt #123;#123; orderNumber #125;#125; wird Dich in Kürze erreichen.
 </p>
-        
-        <p>
-        Deine Sendung mit der Auftragsnummer #123;#123; orderNumber #125;#125 wurde soeben mit #123;#123; carrier #125;#125 an Deine angegebene Adresse versendet.
-
-        </p>
-        <p>#123;#123; recipient #125;#125</p>
         
         <p>
           Mit Deiner Sendungsnummer kannst Du Dein Paket ganz einfach verfolgen:
