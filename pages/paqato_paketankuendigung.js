@@ -9,6 +9,7 @@ export default function Unterseite() {
     <Layout>
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/wunschprodukt.png" />
+        <p></p>
         <p>
           <strong>
             Dein Paket von priwatt zur Bestellung #123;#123; orderNumber
@@ -29,7 +30,7 @@ export default function Unterseite() {
           Du möchtest einen Wunschtermin, eine Adressänderung, eine
           Nachbarschaftszustellung oder eine Abstellgenehmigung beantragen?
         </strong>
-        Nutze dafür ganz einfach diesen Paketlink. #123;%- endif -%#125;</p> 
+        Klicke dafür ganz einfach auf diesen #123;%- endif -%#125;</p> 
         <BottomContainer />
         <style jsx>{`
           p {

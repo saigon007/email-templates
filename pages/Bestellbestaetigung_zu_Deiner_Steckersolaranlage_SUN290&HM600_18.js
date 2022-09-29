@@ -57,15 +57,15 @@ export default function Unterseite() {
           </tr>
           <tr>
             <th>Solarmodul Hersteller</th>
-            <td>Canadian Solar</td>
+            <td>Sunman</td>
           </tr>
           <tr>
             <th>Solarmodul Typ</th>
-            <td>Canadian Solar 375 Wp - CS3L - 375</td>
+            <td>Sunman 290 Wp - SMD290M-6X10DW</td>
           </tr>
           <tr>
             <th>Solarmodul Einzelleistung in W</th>
-            <td>375</td>
+            <td>290</td>
           </tr>
         </table>
         <strong>Informationen zu Deinem Wechselrichter</strong>

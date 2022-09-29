@@ -13,12 +13,12 @@ export default function Unterseite() {
         <p>Liebe Kundin, lieber Kunde,</p>
         <p>
           wir haben gute Nachrichten: zum Wochenende Dein Wunschprodukt{" "}
-          <strong>priFlat</strong> ist ab sofort für eine limitierte
-          Anzahl verfügbar. Der avisierte Lieferzeitraum liegt zwischen dem{" "}
-          <strong>16. bis 30. September</strong>.
+          <strong>priFlat</strong> ist ab sofort für eine limitierte Anzahl
+          verfügbar. Der avisierte Lieferzeitraum liegt zwischen dem{" "}
+          <strong>15. bis 30. Oktober</strong>.
         </p>
         <p>
-          Um zum Produkt zu gelangen, klicke bitte auf den nachfolgenden Link:
+          Um zum Produkt zu gelangen, klicke bitte auf den nachfolgenden Button:
         </p>
         <Button href="https://priwatt.de/stecker-solaranlagen/flachdach/priflat/SW10054.106">
           Hier geht`s zum priFlat!
@@ -27,12 +27,13 @@ export default function Unterseite() {
           Sollte dieser Button nicht angezeigt werden, klicke bitte{" "}
           <a href="https://priwatt.de/stecker-solaranlagen/flachdach/priflat/SW10054.106">
             hier
-          </a>.
+          </a>
+          .
         </p>
         <p>
-          <strong>Achtung:</strong> Erfahrungsgemäß ist das Produkt binnen 9 bis
-          24 Stunden ausverkauft. Ein weiterer Nachschub ist schon in 2 Wochen
-          geplant. Solltest Du kein Produkt mehr bekommen, bleibt die
+          <strong>Achtung:</strong> Erfahrungsgemäß ist das Produkt binnen
+          weniger Stunden ausverkauft. Ein weiterer Nachschub ist schon in 2
+          Wochen geplant. Solltest Du kein Produkt mehr bekommen, bleibt die
           Produktbenachrichtigung für Deine E-Mail-Adresse aktiviert und wir
           informieren Dich direkt, wenn das Produkt wieder bestellbar ist.
         </p>

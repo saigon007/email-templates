@@ -53,19 +53,19 @@ export default function Unterseite() {
         <table className="first-table">
           <tr>
             <th>Solarmodul Anzahl</th>
-            <td>2</td>
+            <td>1</td>
           </tr>
           <tr>
             <th>Solarmodul Hersteller</th>
-            <td>Canadian Solar</td>
+            <td>Trina Solar</td>
           </tr>
           <tr>
             <th>Solarmodul Typ</th>
-            <td>Canadian Solar 375 Wp - CS3L - 375</td>
+            <td>Trina Solar 395 Wp - TSM-395</td>
           </tr>
           <tr>
             <th>Solarmodul Einzelleistung in W</th>
-            <td>375</td>
+            <td>395</td>
           </tr>
         </table>
         <strong>Informationen zu Deinem Wechselrichter</strong>
@@ -76,42 +76,42 @@ export default function Unterseite() {
           </tr>
           <tr>
             <th>Wechselrichter Hersteller</th>
-            <td>Hoymiles</td>
+            <td>TSUN</td>
           </tr>
           <tr>
             <th>Wechselrichter Typ</th>
-            <td>HM-600</td>
+            <td>TSOL M-350</td>
           </tr>
           <tr>
             <th>Wechselrichter Einzelleistung in W/VA</th>
-            <td>600</td>
+            <td>300</td>
           </tr>
         </table>
         <p></p>
         
-         <p><strong>Melde Deine Stecker-Solaranlage an!</strong>
-        
-        
-        Klicke auf den folgenden Button, um mehr über den Anmeldeservice von
-        priwatt zu erfahren und Deine Anlage kostenfrei anzumelden!</p> 
-        
-        <Button href="https://priwatt.de/service/anmeldeservice">
-          Hier klicken und mehr erfahren!
-        </Button>
-        <p>
-          Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
-          gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,{" "}
-          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
-            YouTube-Kanal
-          </a>{" "}
-          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>{" "}
-          vorbei.
-        </p>
+        <p><strong>Melde Deine Stecker-Solaranlage an!</strong>
+       
+       
+       Klicke auf den folgenden Button, um mehr über den Anmeldeservice von
+       priwatt zu erfahren und Deine Anlage kostenfrei anzumelden!</p> 
+       
+       <Button href="https://priwatt.de/service/anmeldeservice">
+         Hier klicken und mehr erfahren!
+       </Button>
+       <p>
+         Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
+         gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,{" "}
+         <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
+           YouTube-Kanal
+         </a>{" "}
+         oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>{" "}
+         vorbei.
+       </p>
 
-        <p>
-          Wir wünschen Dir viel Spaß bei der Erzeugung Deines eigenen
-          Solarstroms!
-        </p>
+       <p>
+         Wir wünschen Dir viel Spaß bei der Erzeugung Deines eigenen
+         Solarstroms!
+       </p>
         <BottomContainer />
         <style jsx>{`
           p {

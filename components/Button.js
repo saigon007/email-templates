@@ -15,7 +15,7 @@ export default function Button({
           text-decoration: none;
           background: #3edc99;
           padding: 15px 25px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           width: fit-content;
           border-radius: 20px;
           font-weight: 500;
