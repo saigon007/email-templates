@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 export default function Unterseite() {
   return (
@@ -38,6 +39,14 @@ export default function Unterseite() {
           </strong>
           Nutze dafür ganz einfach diesen Paketlink. #123;%- endif -%#125;
         </p>
+
+        <p>
+        Um schnell und einfach in Deine private Energiewende zu starten, findest Du hier die Montageanleitung zu Deiner Stecker-Solaranlage.
+        </p>
+        <Button href="https://priwatt.de/wordpress/wp-content/uploads/2022/09/Montageanleitung-09-2022-2.pdf">
+          Hier geht`s zur Montageanleitung
+        </Button>
+
         <BottomContainer />
         <style jsx>{`
           p {

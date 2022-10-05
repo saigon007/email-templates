@@ -31,6 +31,16 @@ export default function Unterseite() {
           Nachbarschaftszustellung oder eine Abstellgenehmigung beantragen?
         </strong>
         Klicke dafür ganz einfach auf diesen #123;%- endif -%#125;</p> 
+
+        <p>
+        Nutze die Zeit, bis Dein Paket da ist, gern, um auf unserem <a href="https://priwatt.de/blog/">Blog</a>, 
+          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
+            YouTube-Kanal
+          </a> 
+          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a> 
+          mehr über Deinen neuen Energielieferanten zu lernen.
+        </p>
+
         <BottomContainer />
         <style jsx>{`
           p {
