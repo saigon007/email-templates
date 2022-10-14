@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
       <div className="footer-text">
         <p>© 2022 Priwatt GmbH</p>
-        <p> Pfaffendorfer Straße 26, 04105 Leipzig, Deutschland</p>
+        <p> Schillerstraße 4, 04109 Leipzig, Deutschland</p>
         <p>
           Dies ist eine automatisch versendete Nachricht. Du hast Fragen? Dann
           antworte uns gern direkt auf diese E-Mail.
