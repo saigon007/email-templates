@@ -11,8 +11,11 @@ export default function Unterseite() {
       <Container>
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/product-information.png" />
         <p></p>
-        <p> Hallo &#123;&#123; order.orderCustomer.firstName &#125;&#125;
-          &#123;&#123; order.orderCustomer.lastName &#125;&#125;,</p>
+        <p>
+          {" "}
+          Hallo &#123;&#123; order.orderCustomer.firstName &#125;&#125;
+          &#123;&#123; order.orderCustomer.lastName &#125;&#125;,
+        </p>
         <p>vielen Dank für Deine Bestellung bei priwatt!</p>
 
         <p>
@@ -44,7 +47,6 @@ export default function Unterseite() {
             dieser E-Mail benötigst Du im Anmeldeprozess Deiner
             Stecker-Solaranlage! Speichere Dir diese also gerne ab.
           </strong>
-       
           Den Link zum Anmeldeservice von priwatt findest Du unterhalb der
           Tabelle.
         </p>
@@ -88,16 +90,26 @@ export default function Unterseite() {
           </tr>
         </table>
         <p></p>
-        
-         <p><strong>Melde Deine Stecker-Solaranlage an!</strong>
-        
-        
-        Klicke auf den folgenden Button, um mehr über den Anmeldeservice von
-        priwatt zu erfahren und Deine Anlage kostenfrei anzumelden!</p> 
-        
+
+        <p>
+          <strong>
+            Starte jetzt den Anmeldeprozess Deiner Stecker-Solaranlage!
+          </strong>
+          Registriere Dich mit der Angabe Deiner im Bestellvorgang genutzten
+          E-Mail-Adresse und Deiner Bestellnummer unter dem folgenden Link:
+        </p>
+
         <Button href="https://priwatt.de/service/anmeldeservice">
-          Hier klicken und mehr erfahren!
+          Hier klicken und kostenlos anmelden!
         </Button>
+        <p>
+          Nachdem Du Dich online registriert hast, erhältst Du unsere
+          Schritt-für-Schritt-Anleitung, die Dich dabei unterstützt, Deine
+          Stecker-Solaranlage ganz schnell und einfach selbst bei Deinem
+          Netzbetreiber anzumelden. Die Registrierung im Marktstammdatenregister
+          übernimmt unser Anmeldeservice sogar vollständig für Dich.
+        </p>
+
         <p>
           Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
           gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,{" "}
@@ -109,8 +121,8 @@ export default function Unterseite() {
         </p>
 
         <p>
-          Wir wünschen Dir viel Spaß bei der Erzeugung Deines eigenen
-          Solarstroms!
+          Danke, dass Du Dich für priwatt entschieden hast. Gemeinsam treiben
+          wir die Energiewende voran!
         </p>
         <BottomContainer />
         <style jsx>{`

@@ -89,29 +89,39 @@ export default function Unterseite() {
         </table>
         <p></p>
         
-        <p><strong>Melde Deine Stecker-Solaranlage an!</strong>
-       
-       
-       Klicke auf den folgenden Button, um mehr über den Anmeldeservice von
-       priwatt zu erfahren und Deine Anlage kostenfrei anzumelden!</p> 
-       
-       <Button href="https://priwatt.de/service/anmeldeservice">
-         Hier klicken und mehr erfahren!
-       </Button>
-       <p>
-         Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
-         gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,{" "}
-         <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
-           YouTube-Kanal
-         </a>{" "}
-         oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>{" "}
-         vorbei.
-       </p>
+        <p>
+          <strong>
+            Starte jetzt den Anmeldeprozess Deiner Stecker-Solaranlage!
+          </strong>
+          Registriere Dich mit der Angabe Deiner im Bestellvorgang genutzten
+          E-Mail-Adresse und Deiner Bestellnummer unter dem folgenden Link:
+        </p>
 
-       <p>
-         Wir wünschen Dir viel Spaß bei der Erzeugung Deines eigenen
-         Solarstroms!
-       </p>
+        <Button href="https://priwatt.de/service/anmeldeservice">
+          Hier klicken und kostenlos anmelden!
+        </Button>
+        <p>
+          Nachdem Du Dich online registriert hast, erhältst Du unsere
+          Schritt-für-Schritt-Anleitung, die Dich dabei unterstützt, Deine
+          Stecker-Solaranlage ganz schnell und einfach selbst bei Deinem
+          Netzbetreiber anzumelden. Die Registrierung im Marktstammdatenregister
+          übernimmt unser Anmeldeservice sogar vollständig für Dich.
+        </p>
+
+        <p>
+          Du hast noch Fragen zu Deiner Stecker-Solaranlage? Dann schaue auch
+          gern auf unserem <a href="https://priwatt.de/blog/">Blog</a>,{" "}
+          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
+            YouTube-Kanal
+          </a>{" "}
+          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a>{" "}
+          vorbei.
+        </p>
+
+        <p>
+          Danke, dass Du Dich für priwatt entschieden hast. Gemeinsam treiben
+          wir die Energiewende voran!
+        </p>
         <BottomContainer />
         <style jsx>{`
           p {

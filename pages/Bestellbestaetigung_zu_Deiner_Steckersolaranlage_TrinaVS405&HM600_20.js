@@ -53,19 +53,19 @@ export default function Unterseite() {
         <table className="first-table">
           <tr>
             <th>Solarmodul Anzahl</th>
-            <td>1</td>
+            <td>2</td>
           </tr>
           <tr>
             <th>Solarmodul Hersteller</th>
-            <td>Canadian Solar</td>
+            <td>Trina Solar</td>
           </tr>
           <tr>
             <th>Solarmodul Typ</th>
-            <td>Canadian Solar 375 Wp - CS3L-375</td>
+            <td>Trina Solar 405 Wp - TSM-405</td>
           </tr>
           <tr>
             <th>Solarmodul Einzelleistung in W</th>
-            <td>375</td>
+            <td>405</td>
           </tr>
         </table>
         <strong>Informationen zu Deinem Wechselrichter</strong>
@@ -76,15 +76,15 @@ export default function Unterseite() {
           </tr>
           <tr>
             <th>Wechselrichter Hersteller</th>
-            <td>TSUN</td>
+            <td>Hoymiles</td>
           </tr>
           <tr>
             <th>Wechselrichter Typ</th>
-            <td>TSOL M-350</td>
+            <td>HM-600</td>
           </tr>
           <tr>
             <th>Wechselrichter Einzelleistung in W/VA</th>
-            <td>350</td>
+            <td>600</td>
           </tr>
         </table>
         <p></p>

@@ -61,11 +61,11 @@ export default function Unterseite() {
           </tr>
           <tr>
             <th>Solarmodul Typ</th>
-            <td>Canadian Solar 375 Wp - CS3L-375</td>
+            <td>Canadian Solar 370 Wp - CS3L-370</td>
           </tr>
           <tr>
             <th>Solarmodul Einzelleistung in W</th>
-            <td>375</td>
+            <td>370</td>
           </tr>
         </table>
         <strong>Informationen zu Deinem Wechselrichter</strong>
