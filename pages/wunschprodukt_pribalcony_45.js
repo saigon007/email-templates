@@ -60,7 +60,7 @@ export default function Unterseite() {
           p {
             font-size: 16px;
             line-height: 24px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
             margin: 0;
           }
           a {

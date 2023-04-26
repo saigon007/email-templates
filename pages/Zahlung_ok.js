@@ -1,28 +1,26 @@
 import Layout from "../components/Layout";
-import ContainerOrderNr from "../components/ContainerOrderNr";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
+import ContainerOrderNr from "../components/ContainerOrderNr";
 
 export default function Unterseite() {
   return (
     <Layout>
       <ContainerOrderNr>
-        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/05/zahlung.png" />
-
-        <p></p>
-        <p>Hallo &#123;NAME&#125;,</p>
-
+        <br />
+        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2023/01/Img-12.png" />
+        <br />
+        <p>&#123;ANSCHREIBEN&#125;,</p>
         <p>
           tolle Neuigkeiten:{" "}
           <strong>
             die Zahlung zu Deiner Bestellung &#123;INTERNET&#125; vom
-            &#123;DATUM&#125; ist bei uns eingegangen.
+            &#123DATUM&#125; ist bei uns eingegangen.
           </strong>{" "}
-          Vielen Dank! Im nächsten Schritt wird Deine Bestellung sorgfältig von
-          unserem Team verpackt und an unseren Logistik-Partner übergeben.
+          Vielen Dank! Im nächsten Schritt werden Deine Produkte sorgfältig von
+          unserem Team verpackt und an unseren Versand-Partner übergeben.
         </p>
-
         <p>
           Sobald das geschehen ist, erhältst Du von uns eine Benachrichtigung
           und die Tracking-Nummern, mit denen Du Deine Sendungen verfolgen
@@ -33,7 +31,6 @@ export default function Unterseite() {
           Das voraussichtliche Lieferdatum findest Du in Deiner vorangegangenen
           Auftragsbestätigung.
         </p>
-
         <p>
           <strong>Wichtig:</strong> Eventuell wird Dich Deine Lieferung in{" "}
           <strong>
@@ -42,14 +39,13 @@ export default function Unterseite() {
           erreichen. Bitte warte mit Rückfragen zur Zustellung also bis zum
           angegebenen Lieferzeitpunkt.
         </p>
-
         <p>
-          Du hast noch Fragen? Dann schaue gerne in unserem{" "}
-          <a href="https://priwatt.de/blog/">Blog</a> , unseren{" "}
-          <a href="https://priwatt.de/service/faq/">FAQ</a> oder{" "}
-          <a href="https://priwatt.de/service/erklaer-videos/">Erklärvideos</a>,{" "}
-          vorbei.
+          Du hast noch Fragen? Dann schaue gerne in unserem <a href="https://priwatt.de/blog/">Blog</a>, unseren <a href="https://priwatt.de/service/faq">FAQ</a> oder 
+          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
+            Erklär-Videos
+          </a> vorbei.
         </p>
+
         <p>
           Vielen Dank, dass Du gemeinsam mit uns die Energiewende vorantreibst!
         </p>

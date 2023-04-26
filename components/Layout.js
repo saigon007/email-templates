@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Layout({ children, padding = true }) {
   return (
     <>
-      <Head>
+  <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
           rel="stylesheet"
@@ -15,7 +15,7 @@ export default function Layout({ children, padding = true }) {
           main {
             padding: ${padding ? "20px" : "0px"};
             background-color: #f6f8fe;
-            margin: auto;
+            margin: 0;
           }
         `}</style>
         <style jsx global>{`

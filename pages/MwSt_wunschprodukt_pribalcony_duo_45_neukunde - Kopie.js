@@ -12,30 +12,27 @@ export default function Unterseite() {
         <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/12/mwstbanner.png" />
         <p>Liebe Kundin, lieber Kunde,</p>
         <p>
-          wir haben tolle Neuigkeiten für Dich: Dein Wunschprodukt
+          wir haben tolle Neuigkeiten für Dich:
           <strong>
-            priBalcony 45° Duo
-          </strong> ist ab sofort mit 0% Mehrwertsteuer (statt 19%) verfügbar! 
+          Ab sofort sparst Du die 19 % Mehrwertsteuer beim
+Kauf Deiner Wunsch-Stecker-Solaranlage priBalcony 45° Duo!
+          </strong>  
         </p>
         <p>
-          Warum? Weil Ab Januar die Mehrwertsteuer für Photovoltaik-Anlagen und deren
-          Betrieb auf 0 % herabgesetzt wird. 
-          <strong>Wir geben die 19 % MwSt schon jetzt an
-          Dich weiter!*</strong>
+        Denn: Mit dem Jahreswechsel wurde die Mehrwertsteuer für Photovoltaik-Anlagen und
+deren Betrieb auf 0 % herabgesetzt!
         </p>
+     
+      
         <p>
-          So umgehst Du den großen Stecker-Solar-Ansturm im Januar, startest
-          nachhaltig ins neue Jahr, sparst bares Geld und produzierst
-          langfristig, schnell und einfach Deinen eigenen grünen Solarstrom.
-        </p>
-        <p>
-          <strong>Um zu Deinem Wunschprodukt zu gelangen, klicke bitte auf den nachfolgenden Link:</strong>
+        Um zu Deinem Wunschprodukt zu gelangen und sofort die 19 % MwSt. zu sparen, klicke
+einfach auf den nachfolgenden Button:
         </p>
         <Button href="https://priwatt.de/stecker-solaranlagen/balkon/pribalcony-duo-450/SW10172.1">
           Hier geht`s zum priBalcony Duo 45°!
         </Button>
         <p>
-          <strong>Sollte dieser Button nicht angezeigt werden, klicke bitte</strong>{" "}
+          <strong>Sollte Dir dieser Button nicht angezeigt werden, klicke bitte</strong>{" "}
           <a href="https://priwatt.de/stecker-solaranlagen/balkon/pribalcony-duo-450/SW10172.1">
             hier
           </a>.
@@ -45,13 +42,12 @@ export default function Unterseite() {
           Stecker-Solaranlage und wir senden sie Dir im Januar zu.
         </p>
         <p>
-          Um die 0 % MwSt. in Anspruch nehmen zu können, gilt es folgende
-          Voraussetzung zu erfüllen:
+        Um die 0 % MwSt. in Anspruch nehmen zu können, gibt es eine Voraussetzung:
         </p>
         <p>
-          - Die Rechnungsadresse der Bestellung muss mit der des
-          Anlagenbetreibers/der Anlagenbetreiberin übereinstimmen! Du kaufst Die
-          Anlage also für Dich selbst.
+          - Die Rechnungsadresse Deiner Bestellung muss mit der Adresse des
+Anlagenbetreibers/der Anlagenbetreiberin übereinstimmen!
+Kurzgefasst heißt das: Du kaufst die Anlage für Dich selbst.
         </p>
         <p>
           Du erfüllst die Voraussetzung? Super, dann ist Deine privaten
@@ -59,12 +55,13 @@ export default function Unterseite() {
         </p>
 
         <p>
-          Nutze zudem gern unseren{" "}
+        Unser Tipp für Dich: Nutze zudem unseren{" "}
           <a href="https://priwatt.de/service/anmeldeservice/">
             gratis Anmeldeservice
           </a>
-          inkl. Anmeldegarantie. So wird nach dem Kauf auch die Registrierung
-          Deiner Anlage zum Kinderspiel!
+          inklusive
+Anmeldegarantie. So wird nach dem Kauf auch die Registrierung Deiner Anlage zum
+Kinderspiel!
         </p>
 
         <p>

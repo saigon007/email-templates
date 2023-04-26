@@ -7,7 +7,7 @@ export default function Container({ children }) {
       {children}
       <style jsx>{`
         .container {
-          padding: 50px 30px;
+          padding: 30px;
           background-color: white;
           margin: auto;
           border-radius: 30px;

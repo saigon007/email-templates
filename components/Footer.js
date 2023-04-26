@@ -28,11 +28,12 @@ export default function Footer() {
         </a>
       </div>
       <div className="footer-text">
-        <p>© 2022 Priwatt GmbH</p>
+        <p>© 2023 Priwatt GmbH</p>
         <p> Schillerstraße 4, 04109 Leipzig, Deutschland</p>
         <p>
-          Dies ist eine automatisch versendete Nachricht. Du hast Fragen? Dann
-          antworte uns gern direkt auf diese E-Mail.
+          Dies ist eine automatisch versendete Nachricht.<br/>
+          Eine direkte Antwort auf diese Email ist nicht möglich.
+         
         </p>
       </div>
       <style jsx>{`

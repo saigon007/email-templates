@@ -3,7 +3,7 @@ import OrderNr from "./OrderNr";
 
 export default function ContainerOrderNr({
   children,
-  varordernr = "# &#123;BELEGNR&#125;",
+  varordernr = "# {BELEGNR}",
 }) {
   return (
     <div className="container">

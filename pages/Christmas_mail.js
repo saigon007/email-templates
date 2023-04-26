@@ -3,26 +3,21 @@ import Container from "../components/Container";
 import Banner from "../components/Banner";
 import BottomContainer from "../components/BottomContainer";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
 
 export default function Passwort_vergessen() {
   return (
     <Layout>
       <Container>
-        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/08/wichtige-neuigkeiten.png" />
-        <p>Hallo &#123;First + surename&#125;,</p>
+        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/12/christmas_banner.png" />
+        <p>Hallo &#123;first + surename&#125;,</p>
+        <p>es ist Weihnachten, die Zeit im Jahr, um Danke zu sagen.
+       </p>
         <p>
-          Du hast Dein Passwort vergessen? Das passiert den Besten! Klicke
-          einfach auf den folgenden Button, um Dir schnell und sicher ein neues
-          Passwort zu erstellen.
+        Wir sind unheimlich dankbar, dass Du mit Deiner Stecker-Solaranlage einen Beitrag zu einer nachhaltigeren Zukunft leistest. Nur gemeinsam mit Dir können wir unsere Mission verwirklichen, die Energiewende für alle zu ermöglichen.
         </p>
-        <Button href="https://priwatt.de/service/anmeldeservice">
-          Hier klicken und Passwort ändern
-        </Button>
-        <p>
-          Vielen Dank für Deine Geduld und toll, dass Du gemeinsam mit uns die
-          Energiewende vorantreibst!
-        </p>
+        <p>Wir wünschen Dir ein frohes Weihnachtsfest im Kreise Deiner Liebsten und einen guten Start ins neue Jahr.</p>
+        
+     
         <BottomContainer />
         <style jsx>{`
           p {

@@ -6,10 +6,13 @@ export default function BottomContainer() {
       </p>
       <div className="line"></div>
       <p className="footer-text">
-        Hinweis: Eine direkte Antwort auf diese E-Mail ist nicht möglich. Wenn
-        Du uns per E-Mail erreichen möchtest, nutze bitte unser Kontaktformular.
+       Du hast Fragen? Dann kontaktiere uns über unser <a href="https://priwatt.de/kontakt/email/">Kontaktformular</a>
       </p>
       <style jsx>{`
+        a {
+          color: #3bdfac;
+        }
+        
         .footer-words {
           color: #0c215a;
           width: 200px;
