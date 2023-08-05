@@ -9,7 +9,7 @@ export default function Unterseite() {
   return (
     <Layout>
       <Container>
-        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2022/07/wunschprodukt.png" />
+        <Banner src="https://priwatt.de/wordpress/wp-content/uploads/2023/06/Versandbestatigung.png" />
         <p>
           <strong>
             Dein Paket von priwatt zur Bestellung #123;#123; orderNumber
@@ -37,13 +37,13 @@ export default function Unterseite() {
             Du möchtest einen Wunschtermin, eine Adressänderung, eine
             Nachbarschaftszustellung oder eine Abstellgenehmigung beantragen?
           </strong>
-          Nutze dafür ganz einfach diesen Paketlink. #123;%- endif -%#125;
+          Nutze dafür ganz einfach diesen <a href="https://priwatt.de/sendungsverfolgung/">Paketlink</a>Paketlink. #123;%- endif -%#125;
         </p>
 
         <p>
         Um schnell und einfach in Deine private Energiewende zu starten, findest Du hier die Montageanleitung zu Deiner Stecker-Solaranlage.
         </p>
-        <Button href="https://priwatt.de/wordpress/wp-content/uploads/2022/09/Montageanleitung-09-2022-2.pdf">
+        <Button href="https://priwatt.de/wordpress/wp-content/uploads/2023/05/L_19_523_priwatt_Montageanleitungen-web.pdf">
           Hier geht`s zur Montageanleitung
         </Button>
 

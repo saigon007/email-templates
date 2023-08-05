@@ -18,7 +18,7 @@ export default function Unterseite() {
         </p>
         
         <p>Hallo #123;#123; recipient.name #125;#125;</p>
-        <p>Deine Bestellung von priwatt #123;#123; orderNumber #125;#125; wird Dich in Kürze erreichen.
+        <p>Deine Bestellung von priwatt #123;#123; orderNumber #125;#125; ist auf dem Weg zu Dir und wird Dich bald erreichen.
 </p>
         
         <p>
@@ -30,15 +30,14 @@ export default function Unterseite() {
           Du möchtest einen Wunschtermin, eine Adressänderung, eine
           Nachbarschaftszustellung oder eine Abstellgenehmigung beantragen?
         </strong>
-        Klicke dafür ganz einfach auf diesen #123;%- endif -%#125;</p> 
+        Klicke dafür ganz einfach auf diesen <a href="https://priwatt.de/sendungsverfolgung/">Paketlink</a> #123;%- endif -%#125;</p> 
 
         <p>
-        Nutze die Zeit, bis Dein Paket da ist, gern, um auf unserem <a href="https://priwatt.de/blog/">Blog</a>, 
-          <a href="https://www.youtube.com/channel/UCLBefFTN5Dl3hz7OnSUUhOg">
-            YouTube-Kanal
-          </a> 
-          oder in unseren <a href="https://priwatt.de/service/faq">FAQ</a> 
-          mehr über Deinen neuen Energielieferanten zu lernen.
+        Unser Tipp für Dich: Nutze die Zeit bis zur Zustellung Deines Pakets, um in unseren{" "}
+          <a href="https://priwatt.de/service/erklaer-videos/">Erklär-videos</a>,{" "}
+          <a href="https://priwatt.de/service/faq/">FAQ</a> oder auf unserem{" "}
+          <a href="https://priwatt.de/blog/">Blog</a> mehr über Dein Balkonkraftwerk zu erfahren.
+
         </p>
 
         <BottomContainer />
